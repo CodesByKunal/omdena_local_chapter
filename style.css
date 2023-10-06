@@ -79,6 +79,13 @@ nav i {
     display: none;
 }
 
+h3 {
+    border: 2px solid rgb(194, 193, 193);
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    padding: 1px 6px;
+}
+
 #side-nav {
     display: none;
 }
@@ -136,6 +143,35 @@ nav i {
     height: calc(100% - 50px);
     width: 100%;
     background-color: #030300;
+    color: white;
+    text-align: center;
+}
+
+#Projects {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: #030300;
+    color: white;
+    text-align: center;
+}
+#Projects h1{
+    font-size: 3vw;
+}
+#project-cards {
+    justify-content: space-around;
+    height: calc(100% - 98.4px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.cards {
+    width: 40%;
+    height: 100%;
+    background-color: #dbe9ff;
+    border-radius:15px ;
 }
 
 /* Mobile devices CSS */
@@ -158,7 +194,6 @@ nav i {
     nav h2 {
         font-size: 4vh;
         color: #2c38b1;
-        ;
     }
 
     #side-nav {
@@ -201,7 +236,7 @@ nav i {
         content: "";
         height: 3px;
         display: block;
-        background-color:white;
+        background-color: white;
         transform: scaleX(0);
         transform-origin: left;
         transition: .3s ease-in-out;
@@ -258,5 +293,30 @@ nav i {
 
     #lower {
         font-size: 6vw;
+    }
+
+    h3 {
+        border: 2px solid rgb(194, 193, 193);
+        border-radius: 5px;
+        background-color: cornflowerblue;
+        padding: 1px 6px;
+    }
+
+    #project-cards {
+        height: calc(100% - 60.8px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        width: 80%;
+        border-radius: 14px;
+    }
+    #Projects h1{
+        font-size: 4vh;
     }
 }
