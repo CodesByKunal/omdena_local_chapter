@@ -1,8 +1,17 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
     padding: 0;
     margin: 0;
+    font-family: 'Audiowide', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 html,
@@ -12,16 +21,17 @@ body {
     overflow-x: hidden;
     cursor: default;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 #main {
     width: 100%;
     height: 100%;
-    position: relative;
+    background-color: #030300;
 }
 
 #nav-p-1 {
-    background-color: lightseagreen;
+    background-color: #1f1f1e;
     color: white;
     width: 100%;
     height: 50px;
@@ -29,8 +39,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 3vw;
-    border-bottom: 2px solid #dddddddd;
-
+    border-bottom: 4px solid #dddddddd;
+    position: fixed;
+    top: 0;
 }
 
 #nav-p-2 {
@@ -42,14 +53,14 @@ body {
 nav h2 {
     font-size: 2vw;
     position: relative;
-    ;
+    color: #2c38b1;
 }
 
 nav h4::after {
     content: "";
     height: 3px;
     display: block;
-    background-color: #2c38b1;
+    background-color: white;
     transform: scaleX(0);
     transform-origin: left;
     transition: .3s ease-in-out;
@@ -72,9 +83,65 @@ nav i {
     display: none;
 }
 
+#home {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    margin-top: 50px;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-container {
+    height: 50%;
+    width: 50%;
+    background-image: url('./logo3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#upper {
+    font-size: 3.5vw;
+    color: white;
+}
+
+#middle {
+    font-size: 4vw;
+    color: #00296b;
+}
+
+#lower {
+    font-size: 3.1vw;
+    color: white;
+}
+
+#About {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: #030300;
+}
+
 @media (max-width:600px) {
     nav {
-        background-color: lightseagreen;
+        position: fixed;
+        top: 0;
     }
 
     #nav-p-1 i {
@@ -89,16 +156,21 @@ nav i {
 
     nav h2 {
         font-size: 4vh;
+        color: #2c38b1;
+        ;
     }
 
     #side-nav {
-        background-color: lightseagreen;
+        background-color: #1b1b1c;
         color: white;
-        height: calc(100% - 50px);
+        height: 100%;
         float: right;
-        width: 50%;
+        width: 40%;
         transition: .5s ease-in-out;
         display: block;
+        position: fixed;
+        left: 60%;
+        top: 50px;
     }
 
     .nav-slide-out {
@@ -116,12 +188,14 @@ nav i {
         height: 60%;
         width: 100%;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 6vh;
     }
 
     #side-nav-p-1 h4 {
         font-size: 3vh;
     }
+
     #side-nav-p-1 h4::after {
         content: "";
         height: 3px;
@@ -130,9 +204,58 @@ nav i {
         transform: scaleX(0);
         transform-origin: left;
         transition: .3s ease-in-out;
+        z-index: 2;
     }
-    
+
     #side-nav-p-1 h4:hover::after {
         transform: scaleX(1);
+    }
+
+    #home {
+        width: 100%;
+        height: calc(100% - 50px);
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+
+    #left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #image-container {
+        width: 50%;
+        height: 65%;
+        background-image: url('./logo3.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #right {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #upper {
+        font-size: 6vw;
+        color: white;
+    }
+
+    #middle {
+        font-size: 7vw;
+        color: #2c38b1;
+    }
+
+    #lower {
+        font-size: 6vw;
     }
 }
