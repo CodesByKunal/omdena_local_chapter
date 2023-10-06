@@ -138,6 +138,7 @@ nav i {
     background-color: #030300;
 }
 
+/* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
         position: fixed;
@@ -200,7 +201,7 @@ nav i {
         content: "";
         height: 3px;
         display: block;
-        background-color: #2c38b1;
+        background-color:white;
         transform: scaleX(0);
         transform-origin: left;
         transition: .3s ease-in-out;
