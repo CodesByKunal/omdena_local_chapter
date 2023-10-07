@@ -450,21 +450,27 @@ h3 {
 
     #about-right-in {
         height: 90%;
-        width: 100%;
+        width: 90%;
         color: rgb(0, 0, 0);
-        padding: 15px;
-        background-image: url('./16717130_2002.i039.010_chatbot_messenger_ai_isometric_set-05-removebg-preview.png');
+        background-image: url(./16717130_2002.i039.010_chatbot_messenger_ai_isometric_set-05-removebg-preview.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
+
     #about-right {
-        font-size: 2.2vh;
+        font-size: 2.5vh;
         height: 100%;
         width: 100%;
+        padding: 20px;
         font-weight: 500;
         background-color: #dbe9ffbc;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(4px);
+        backface-visibility: visible red;
+        -webkit-backdrop-filter: blur(4px);
     }
 }
