@@ -34,6 +34,10 @@ body {
     margin-top: 50px;
 }
 
+section {
+    scroll-snap-align: start;
+}
+
 #nav-p-1 {
     background-color: #1f1f1e;
     color: white;
@@ -86,8 +90,9 @@ nav i {
 h3 {
     border: 2px solid rgb(194, 193, 193);
     border-radius: 5px;
-    background-color: cornflowerblue;
+    background-color: #0069d9;
     padding: 1px 6px;
+    font-weight: 100;
 }
 
 #side-nav {
@@ -175,13 +180,34 @@ h3 {
     align-items: center;
     gap: 10px;
     margin-top: 40px;
+    padding-bottom: 20px;
 }
-
+#mini-logo{
+    background-image: url('./mini-logo.png');
+    height: 100%;
+    width: 20%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
 .cards {
     width: 40%;
     height: 100%;
     background-color: #dbe9ff;
     border-radius: 15px;
+}
+
+#Connect {
+    height: 100%;
+    width: 100%;
+    background-color: #030300;
+    color: white;
+    text-align: center;
+}
+
+#Connect h1 {
+    font-size: 3vw;
 }
 
 /* Mobile devices CSS */
@@ -204,6 +230,7 @@ h3 {
     nav h2 {
         font-size: 4vh;
         color: #2c38b1;
+        display: none;
     }
 
     #side-nav {
@@ -308,7 +335,8 @@ h3 {
     h3 {
         border: 2px solid rgb(194, 193, 193);
         border-radius: 5px;
-        background-color: cornflowerblue;
+        background-color: #0069d9;
+        font-weight: 100;
         padding: 1px 6px;
     }
 
@@ -334,6 +362,16 @@ h3 {
 
     #About h1 {
         font-size: 4vh;
+    }
+
+    #Connect h1 {
+        font-size: 4vh;
+    }
+    #mini-logo{
+        background-image: url(./mini-logo.png);
+        height: 100%;
+        margin-left: -15px;
+        display: block;
     }
 
 }
