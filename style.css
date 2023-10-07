@@ -292,6 +292,7 @@ h3 {
         transition: .5s ease-in-out;
         display: block;
         position: fixed;
+        z-index: 2;
         left: 60%;
         top: 50px;
     }
