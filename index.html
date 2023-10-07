@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,20 +37,20 @@
     </div>
     <div id="main">
         <section id="home">
-            <div id="left">
+            <div id="left" data-aos="fade-right" data-aos-duration="1000">
                 <span id="upper">
                     Welcome to
                 </span>
                 <h2 id="middle">OMDENA</h2>
                 <span id="lower">VIT Bhopal Local Chapter</span>
             </div>
-            <div id="right">
+            <div id="right" data-aos="fade-left" data-aos-duration="1000">
                 <div id="image-container"></div>
             </div>
         </section>
         <section id="About">
             <h1>About Us</h1>
-            
+
         </section>
         <section id="Projects">
             <h1>Projects</h1>
@@ -63,6 +63,10 @@
             <h1>Connect with us</h1>
         </section>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="script.js"></script>
 
