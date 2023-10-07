@@ -182,7 +182,8 @@ h3 {
     margin-top: 40px;
     padding-bottom: 20px;
 }
-#mini-logo{
+
+#mini-logo {
     background-image: url('./mini-logo.png');
     height: 100%;
     width: 20%;
@@ -191,6 +192,7 @@ h3 {
     background-repeat: no-repeat;
     display: none;
 }
+
 .cards {
     width: 40%;
     height: 100%;
@@ -367,7 +369,8 @@ h3 {
     #Connect h1 {
         font-size: 4vh;
     }
-    #mini-logo{
+
+    #mini-logo {
         background-image: url(./mini-logo.png);
         height: 100%;
         margin-left: -15px;
