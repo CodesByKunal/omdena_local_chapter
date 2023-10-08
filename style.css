@@ -259,7 +259,11 @@ h3 {
     text-align: justify;
     font-size: 1.5vw;
     font-family: 'Oswald', sans-serif;
+    border-bottom-right-radius: 3px ;
+    border-top-left-radius: 3px ;
 }
+
+
 
 /* Mobile devices CSS */
 @media (max-width:600px) {
@@ -462,13 +466,31 @@ h3 {
     }
 
 
-    #about-right  {
+    #about-right {
         font-size: 2.5vh;
         height: 100%;
         width: 100%;
         padding: 20px;
-        font-weight: 500;
-        background-color: #dbe9ffd4;
-        /* backdrop-filter: blur(4px); */
+        font-weight: 200px;
+        background: linear-gradient(90deg, #9cbdf3cd, #a799e7cd, #91d9f3cd, #9defa1d8);
+        background-size: 200% 200%;
+        animation: gradient 10s ease infinite;
+        border-bottom-right-radius: 3px ;
+        border-top-left-radius: 3px ;
     }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
 }

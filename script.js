@@ -1,3 +1,4 @@
+AOS.init();
 const menuIcon = document.querySelector('.ri-menu-line');
 const sideNav = document.getElementById('side-nav');
 
