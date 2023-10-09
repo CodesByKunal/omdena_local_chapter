@@ -263,7 +263,9 @@ h3 {
     border-top-left-radius: 3px ;
 }
 
-
+.joinBtn:hover{
+    background-color: green;
+}
 
 /* Mobile devices CSS */
 @media (max-width:600px) {
