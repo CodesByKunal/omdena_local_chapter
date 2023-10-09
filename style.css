@@ -576,7 +576,7 @@ button a{
 
     #project-title {
         color: black;
-        height: 50%;
+        height: 40%;
         transform: translateY(0%);
         display: flex;
         justify-content: center;
