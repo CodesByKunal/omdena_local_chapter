@@ -226,6 +226,7 @@ h3 {
 #project-title h1 {
     font-size: 3vw;
     transform: translateY(50%);
+    font-family: 'Oswald', sans-serif;
 }
 
 #project-desc {
@@ -233,10 +234,12 @@ h3 {
     color: black;
     transform: translateY(100%);
     transition: .7s ease;
+    padding: 0 15px;
 }
 
 #project-desc p {
     font-size: 1.5vw;
+    font-family: 'Oswald', sans-serif;
 }
 
 .cards:hover {
@@ -459,6 +462,7 @@ h3 {
 
     #Projects h1 {
         font-size: 4vh;
+        
     }
 
     #About h1 {
