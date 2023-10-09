@@ -89,7 +89,7 @@ nav h4:hover::after {
 nav h4 {
     font-size: 1.3vw;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 nav i {
@@ -370,7 +370,10 @@ button a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+#nav-p-2 h4 a{
+    user-select: none;
+    font-weight: 100;
+}
 /* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
@@ -658,5 +661,9 @@ button a {
 
     button {
         height: 0px;
+    }
+    #nav-p-2 h4 a{
+        user-select: none;
+        font-weight: 100;
     }
 }
