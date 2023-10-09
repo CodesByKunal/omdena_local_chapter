@@ -311,16 +311,16 @@ h3 {
     background-color: green;
 }
 
-button{
+button {
     margin-top: 20px;
-    background-color: white;
-    border: 1px solid white;
+    background-color: rgb(114, 170, 239);
+    border: 1px solid rgb(114, 170, 239);
     color: black;
     font-size: 18px;
     font-weight: 600;
     /* padding: 5px 3px; */
     width: 140px;
-    height: 40px;
+    height: 45px;
     cursor: pointer;
     border-radius: 4px;
     /* outline: 3px solid rgb(0, 0, 0); */
@@ -328,18 +328,22 @@ button{
     transition: .5s;
     transform: scale(.9);
 }
-button:hover{
-    background-color: rgb(114, 170, 239);
+
+button:hover {
+    background-color: white;
     transform: scale(1);
-    color: white;
-}
-button:hover  a{
-    color: white;
-}
-button a{
     color: rgb(114, 170, 239);
+}
+
+button:hover a {
+    color: rgb(114, 170, 239);
+}
+
+button a {
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
@@ -615,7 +619,8 @@ button a{
     .cards:hover #project-title {
         transform: translateY(0%)
     }
-    button{
+
+    button {
         display: none;
     }
 }
