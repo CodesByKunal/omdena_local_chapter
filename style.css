@@ -624,11 +624,13 @@ button a {
     }
 
     #project-desc {
-        height: 60%;
-        background-color: #1b1b1c;
+        margin-top: 10%;
+        height: 50%;
+        background-color: #1b1b1ce1;
         transform: translateY(0%);
-        padding: 10px 10px;
-        text-align: center;
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
     }
 
     #project-desc p {
