@@ -3,13 +3,17 @@
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    
+
 }
 
 a {
     text-decoration: none;
     color: white;
     user-select: none;
+}
+
+.joinBtn a {
+    padding: 0px 6px;
 }
 
 ::-webkit-scrollbar {
@@ -139,19 +143,24 @@ h3 {
 }
 
 #upper {
-    font-size: 3.5vw;
+    font-size: 4vw;
+    letter-spacing: 3px;
     color: white;
 }
 
 #middle {
-    font-size: 4vw;
+    font-size: 5vw;
     color: #00296b;
+    letter-spacing: 3px;
 }
 
+
 #lower {
-    font-size: 3.1vw;
+    font-size: 4vw;
     color: white;
+    letter-spacing: 3px;
 }
+
 
 #About {
     height: 100%;
@@ -321,15 +330,17 @@ h3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border:1px solid white;
+    border: 1px solid white;
 }
+
 #project-card-2 {
     background-image: url('https://omdena.com/wp-content/uploads/2023/03/AI-Based-Road-Inspection-System-for-India-scaled.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border:1px solid white;
+    border: 1px solid white;
 }
+
 button {
     margin-top: 20px;
     background-color: rgb(114, 170, 239);
@@ -609,11 +620,12 @@ button a {
         transform: translateY(20%);
         font-family: 'Oswald', sans-serif;
         padding: 0 5px;
+        color: white;
     }
 
     #project-desc {
-        height: 50%;
-        color: black;
+        height: 60%;
+        background-color: #1b1b1c;
         transform: translateY(0%);
         padding: 10px 10px;
         text-align: center;
@@ -621,6 +633,7 @@ button a {
 
     #project-desc p {
         font-size: 2.1vh;
+        color: white;
         font-family: 'Oswald', sans-serif;
     }
 
