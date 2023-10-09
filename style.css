@@ -311,6 +311,35 @@ h3 {
     background-color: green;
 }
 
+button{
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    /* padding: 5px 3px; */
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* outline: 3px solid rgb(0, 0, 0); */
+    outline-offset: -3px;
+    transition: .5s;
+    transform: scale(.9);
+}
+button:hover{
+    background-color: rgb(114, 170, 239);
+    transform: scale(1);
+    color: white;
+}
+button:hover  a{
+    color: white;
+}
+button a{
+    color: rgb(114, 170, 239);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
@@ -462,7 +491,7 @@ h3 {
 
     #Projects h1 {
         font-size: 4vh;
-        
+
     }
 
     #About h1 {
@@ -585,5 +614,8 @@ h3 {
 
     .cards:hover #project-title {
         transform: translateY(0%)
+    }
+    button{
+        display: none;
     }
 }

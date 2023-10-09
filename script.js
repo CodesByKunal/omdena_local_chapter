@@ -12,7 +12,6 @@ menuIcon.addEventListener('click', () => {
     }
 });
 document.addEventListener('click', (e) => {
-    console.log(e.target)
     if (!e.target.classList.contains('tagName')) {
         sideNav.classList.remove('nav-slide-in');
         sideNav.classList.add('nav-slide-out');
