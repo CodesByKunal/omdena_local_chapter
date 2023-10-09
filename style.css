@@ -216,7 +216,7 @@ h3 {
 }
 
 #project-title {
-    color: black;
+    color: white;
     height: 50%;
     transform: translateY(50%);
     transition: .7s ease;
@@ -230,8 +230,10 @@ h3 {
 }
 
 #project-desc {
+    background-color: rgba(18, 18, 18);
+    /* backdrop-filter: blur(5px); */
     height: 50%;
-    color: black;
+    color: white;
     transform: translateY(100%);
     transition: .7s ease;
     padding: 0 15px;
@@ -311,20 +313,31 @@ h3 {
     background-color: green;
 }
 
+#project-card-1 {
+    background-image: url('./_9cbc0353-de78-4392-b0ed-52e09344f234.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid white;
+}
+#project-card-2 {
+    background-image: url('https://omdena.com/wp-content/uploads/2023/03/AI-Based-Road-Inspection-System-for-India-scaled.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid white;
+}
 button {
     margin-top: 20px;
     background-color: rgb(114, 170, 239);
     border: 1px solid rgb(114, 170, 239);
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    /* padding: 5px 3px; */
     width: 140px;
     height: 45px;
     cursor: pointer;
     border-radius: 4px;
-    /* outline: 3px solid rgb(0, 0, 0); */
-    outline-offset: -3px;
     transition: .5s;
     transform: scale(.9);
 }
