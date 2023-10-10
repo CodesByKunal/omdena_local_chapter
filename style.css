@@ -370,10 +370,12 @@ button a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#nav-p-2 h4 a{
+
+#nav-p-2 h4 a {
     user-select: none;
     font-weight: 100;
 }
+
 /* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
@@ -637,10 +639,12 @@ button a {
         flex-direction: column;
         justify-content: center;
     }
-    .btnBox{
+
+    .btnBox {
         display: flex;
         justify-content: center;
     }
+
     #project-desc p {
         font-size: 2.1vh;
         color: white;
@@ -661,9 +665,13 @@ button a {
 
     button {
         height: 0px;
+        border:1px solid white;
     }
-    #nav-p-2 h4 a{
+
+    #nav-p-2 h4 a {
         user-select: none;
-        font-weight: 100;
+    }
+    button a{
+        color: rgb(114, 170, 239);
     }
 }
