@@ -382,7 +382,7 @@ button a {
     width: 100%;
 }
 #events h1{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 #social-media{
     height: 50%;
@@ -394,7 +394,7 @@ button a {
 
 /*  */
 .card svg {
-    height: 100px;
+    height: 50%;
   }
   
   .card {
@@ -511,9 +511,7 @@ button a {
       transform: scale(1);
     }
   }
-  svg{
-    height: 500px;
-  }
+
 /* Mobile devices CSS */
 @media (max-width:600px) {
     nav {
@@ -818,6 +816,9 @@ button a {
         gap: 1%; 
     }
     .card span{
-        font-size: 6vh;
+        font-size: 5vh;
+    }
+    #events h1{
+        font-size: 4vh;
     }
 }
