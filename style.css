@@ -727,6 +727,7 @@ button a {
 
     #Connect h1 {
         font-size: 4vh;
+        display: none;
     }
 
     #mini-logo {
@@ -883,8 +884,10 @@ button a {
 
     #events h1 {
         font-size: 4vh;
+        display: none;
     }
     #events{
         height: 30%;
+        
     }
 }
