@@ -377,15 +377,21 @@ button a {
     user-select: none;
     font-weight: 100;
 }
-#events{
-    height: 50%;
+
+#events {
+    height: 70%;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
 }
-#events h1{
+
+#events h1 {
     font-size: 3vw;
 }
-#social-media{
-    height: 50%;
+
+#social-media {
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -395,23 +401,24 @@ button a {
 /*  */
 .card svg {
     height: 50%;
-  }
-  
-  .card {
+}
+
+.card {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #e7e7e7;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     overflow: hidden;
     height: 50%;
     width: 60%;
     border-radius: 15px;
-  }
-  
-  .card::before, .card::after {
+}
+
+.card::before,
+.card::after {
     position: absolute;
     display: flex;
     align-items: center;
@@ -419,42 +426,42 @@ button a {
     height: 100%;
     transition: 0.25s linear;
     z-index: 1;
-  }
-  
-  .card::before {
+}
+
+.card::before {
     content: "";
     left: 0;
     justify-content: flex-end;
     background-color: #4d60b6;
-  }
-  
-  .card::after {
+}
+
+.card::after {
     content: "";
     right: 0;
     justify-content: flex-start;
     background-color: #4453a6;
-  }
-  
-  .card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-  
-  .card:hover span {
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover span {
     opacity: 0;
     z-index: -3;
-  }
-  
-  .card:hover::before {
+}
+
+.card:hover::before {
     opacity: 0.5;
     transform: translateY(-100%);
-  }
-  
-  .card:hover::after {
+}
+
+.card:hover::after {
     opacity: 0.5;
     transform: translateY(100%);
-  }
-  
-  .card span {
+}
+
+.card span {
     position: absolute;
     display: flex;
     align-items: center;
@@ -469,9 +476,9 @@ button a {
     transition: opacity 0.25s;
     z-index: 2;
     font-size: 4vw;
-  }
-  
-  .card .social-link {
+}
+
+.card .social-link {
     position: relative;
     display: flex;
     align-items: center;
@@ -482,35 +489,83 @@ button a {
     font-size: 24px;
     text-decoration: none;
     transition: 0.25s;
-  }
-  
-  .card .social-link svg {
+}
+
+.card .social-link svg {
     text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
     transform: scale(1);
-  }
-  
-  .card .social-link:hover {
+}
+
+.card .social-link:hover {
     background-color: rgba(249, 244, 255, 0.774);
     animation: bounce_613 0.4s linear;
-  }
-  
-  @keyframes bounce_613 {
+}
+
+@keyframes bounce_613 {
     40% {
-      transform: scale(1.4);
+        transform: scale(1.4);
     }
-  
+
     60% {
-      transform: scale(0.8);
+        transform: scale(0.8);
     }
-  
+
     80% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
-  
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
+
+/* Event */
+.card-ab {
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    background: #212121;
+    box-shadow: 5px 5px 8px #1b1b1b,
+        -5px -5px 8px #272727;
+    transition: 0.4s;
+}
+
+.card-ab:hover {
+    translate: 0 -10px;
+}
+
+.card-title-ab {
+    font-size: 18px;
+    font-weight: 600;
+    color: #b2eccf;
+    margin: 15px 0 0 10px;
+}
+
+.card-image-ab {
+    min-height: 170px;
+    background-color: #313131;
+    border-radius: 15px;
+    background: #313131;
+    box-shadow: inset 5px 5px 3px #2f2f2f,
+        inset -5px -5px 3px #333333;
+}
+
+.card-body-ab {
+    margin: 13px 0 0 10px;
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+}
+
+.footer-ab {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.by-name-ab {
+    font-weight: 700;
+}
 
 /* Mobile devices CSS */
 @media (max-width:600px) {
@@ -801,24 +856,35 @@ button a {
 
     button {
         height: 0px;
-        border:1px solid white;
+        border: 1px solid white;
     }
 
     #nav-p-2 h4 a {
         user-select: none;
     }
-    button a{
+
+    button a {
         color: rgb(114, 170, 239);
     }
-    .card{
+
+    .card {
         height: 40%;
-        width: 80%;   
-        gap: 1%; 
+        width: 80%;
+        gap: 1%;
+
     }
-    .card span{
+    .card-ab {
+       display: none;
+
+    }
+    .card span {
         font-size: 4.5vh;
     }
-    #events h1{
+
+    #events h1 {
         font-size: 4vh;
+    }
+    #events{
+        height: 30%;
     }
 }
