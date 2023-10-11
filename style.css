@@ -882,7 +882,6 @@ button a {
     .card-ab {
         min-width: 60%;
         height: 95%;
-        padding-top: 10%;
     }
 
     .card span {
@@ -901,5 +900,8 @@ button a {
     .card-title-ab{
         font-size: 3.3vh;
         margin: 0px 0 0 0px;
+    }
+    .detils{
+        font-size: 2.5vh;
     }
 }
