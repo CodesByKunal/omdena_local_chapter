@@ -730,7 +730,8 @@ button a {
 
     #Connect h1 {
         font-size: 4vh;
-        display: none;
+        padding-bottom: 10px;
+        /* display: none; */
     }
 
     #mini-logo {
@@ -879,8 +880,9 @@ button a {
     }
 
     .card-ab {
-        display: none;
-
+        min-width: 60%;
+        height: 95%;
+        padding-top: 10%;
     }
 
     .card span {
@@ -893,7 +895,10 @@ button a {
     }
 
     #events {
-        height: 30%;
+        height: 70%;
 
+    }
+    .card-title-ab{
+        font-size: 3.3vh;
     }
 }
