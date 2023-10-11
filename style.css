@@ -383,7 +383,10 @@ button a {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 100px;
+    padding-top: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10%;
 }
 
 #events h1 {
@@ -408,7 +411,7 @@ button a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e7e7e7;
+    /* background: #e7e7e7; */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     overflow: hidden;
@@ -497,7 +500,7 @@ button a {
 }
 
 .card .social-link:hover {
-    background-color: rgba(249, 244, 255, 0.774);
+    /* background-color: rgba(249, 244, 255, 0.774); */
     animation: bounce_613 0.4s linear;
 }
 
@@ -521,8 +524,8 @@ button a {
 
 /* Event */
 .card-ab {
-    width: 30%;
-    height: 80%;
+    min-width: 20%;
+    height: 90%;
     border-radius: 20px;
     background: #212121;
     box-shadow: 5px 5px 8px #1b1b1b,
@@ -535,7 +538,7 @@ button a {
 }
 
 .card-title-ab {
-    font-size: 18px;
+    font-size: 2vw;
     font-weight: 600;
     color: #b2eccf;
     margin: 15px 0 0 10px;
@@ -874,10 +877,12 @@ button a {
         gap: 1%;
 
     }
+
     .card-ab {
-       display: none;
+        display: none;
 
     }
+
     .card span {
         font-size: 4.5vh;
     }
@@ -886,8 +891,9 @@ button a {
         font-size: 4vh;
         display: none;
     }
-    #events{
+
+    #events {
         height: 30%;
-        
+
     }
 }
